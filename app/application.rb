@@ -18,8 +18,7 @@ class Application
       if @@cart.empty?
         return "Your cart is empty."
       else
-        return @@cart.each do |item|
-        "#{item}"
+        "#{@@cart}"
         end
       end
     elsif req.path.match(/add/)
