@@ -17,6 +17,7 @@ class Application
     elsif req.path.match(/cart/)
       if @@cart.empty?
         
+        
       return @@cart.each do |item|
         "#{item}"
       end
