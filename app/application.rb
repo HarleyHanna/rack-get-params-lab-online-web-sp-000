@@ -18,7 +18,7 @@ class Application
       if @@cart.empty?
         return "Your cart is empty."
       else
-        "#{@@cart}"
+        return "#{@@cart}"
         end
       end
     elsif req.path.match(/add/)
